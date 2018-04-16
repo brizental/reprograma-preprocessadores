@@ -1,0 +1,191 @@
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+}
+
+/* Estilos base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body,
+input,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+
+/* Estilos da seção de apresentação
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#presentation {
+  height: 100vh;
+}
+
+#presentation img#header {
+  display: block;
+  margin: 30px auto 0;
+  width: 150px;
+}
+
+#presentation h1 {
+  margin-top: 25vh;
+}
+
+#presentation p {
+  line-height: 2;
+}
+
+#presentation img {
+  display: block;
+  margin-top: 20vh;
+  width: 100%;
+}
+
+/* Estilos da seção de contato
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#contact-form {
+  margin: 60px 0;
+}
+
+#contact-form form {
+  margin-top: 25px;
+}
+
+#contact-form ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+
+#contact-form ul li {
+  margin-bottom: 20px;
+}
+
+#contact-form ul li strong {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Estilos do formulário de contato
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 15px 10px; 
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 7px;
+  box-shadow: none;
+  box-sizing: border-box; }
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  height: 200px;
+  margin-top: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #7e459a;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
