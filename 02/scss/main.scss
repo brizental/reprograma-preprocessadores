@@ -1,0 +1,37 @@
+.row {
+  margin: 50px 0;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+tbody {
+  tr {
+    font-weight: bold;
+
+    &:nth-child(even) {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+form {
+  input {  
+
+    &[type="submit"] {
+
+      &.button-primary {
+        background-color: red;
+      }
+    }
+
+    &[type="text"] {
+      background-color: yellow;
+    }
+
+    &[type="email"] {
+      background-color: blue;
+    }
+  }
+}
