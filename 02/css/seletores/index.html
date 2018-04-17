@@ -7,9 +7,43 @@
   <link rel="stylesheet" href="./styles/skeleton.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
   <style>
+    img {
+      max-width: 100%;
+    }
 
-    /* Coloque seus estilos aqui */
+    .row {
+      margin: 50px 0;
+    }
 
+    #legenda {
+      font-size: 12px;
+      opacity: .9;
+    }
+
+    a {
+      color: red;
+    }
+
+    a:hover {
+      color: yellow;
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    table td:first-child {
+      color: green;
+    }
+
+    table td:nth-child(3) {
+      color: red;
+    }
+
+    table tbody tr:nth-child(even) {
+      background-color: rgba(30, 30, 30, .1);
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -21,7 +55,7 @@
       </div>
       <div class="columns six">
         <img src="./images/placeholder.png" alt="placeholder">
-        <p class="legenda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, consequuntur.</p>
+        <p id="legenda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, consequuntur.</p>
       </div>
     </div>
     <div class="row">
@@ -45,11 +79,41 @@
               <td>22</td>
               <td>Curitiba</td>
             </tr>
+            <tr>
+              <td>Renan Florez</td>
+              <td>26</td>
+              <td>Sao Paulo</td>
+            </tr>
+            <tr>
+              <td>Beatriz Rizental</td>
+              <td>22</td>
+              <td>Curitiba</td>
+            </tr>
+            <tr>
+              <td>Renan Florez</td>
+              <td>26</td>
+              <td>Sao Paulo</td>
+            </tr>
+            <tr>
+              <td>Beatriz Rizental</td>
+              <td>22</td>
+              <td>Curitiba</td>
+            </tr>
+            <tr>
+              <td>Renan Florez</td>
+              <td>26</td>
+              <td>Sao Paulo</td>
+            </tr>
+            <tr>
+              <td>Beatriz Rizental</td>
+              <td>22</td>
+              <td>Curitiba</td>
+            </tr>
           </tbody>
         </table>
       </div>
       <div class="columns four">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, <a href="/">cum temporibus omnis sit</a> reprehenderit adipisci aliquid voluptatibus eveniet obcaecati voluptate dolorem, libero deleniti quidem, quasi aliquam, aspernatur illo eligendi? Officia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, <a target="_blank" href="http://google.com">cum temporibus omnis sit</a> reprehenderit adipisci aliquid voluptatibus eveniet obcaecati voluptate dolorem, libero deleniti quidem, quasi aliquam, aspernatur illo eligendi? Officia.</p>
       </div>
     </div>
   </div>
