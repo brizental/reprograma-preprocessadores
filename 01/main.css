@@ -68,7 +68,7 @@ h1 {
   height: 100vh;
 }
 
-#presentation img#header {
+#presentation img:first-child {
   display: block;
   margin: 30px auto 0;
   width: 150px;
@@ -82,7 +82,7 @@ h1 {
   line-height: 2;
 }
 
-#presentation img {
+#presentation .columns img {
   display: block;
   margin-top: 20vh;
   width: 100%;
