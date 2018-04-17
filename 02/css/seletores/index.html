@@ -48,6 +48,32 @@
     tbody tr:hover {
       background-color: yellow;
     }
+
+    input[type="email"],
+    input[type="text"],
+    select,
+    textarea {
+      border-color: red;
+    }
+
+    input[type="email"]:hover,
+    input[type="text"]:hover,
+    select:hover,
+    textarea:hover {
+      border-color: cyan;
+    }
+
+    h1+p {
+      color: pink;
+    }
+
+    .columns.six {
+      background: violet;
+    }
+
+    div.columns.four>p {
+      color: aliceblue;
+    }
   </style>
 </head>
 <body>
@@ -55,6 +81,7 @@
     <div class="row">
       <div class="columns six">
         <h1>Seletores de CSS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa voluptates soluta libero id similique excepturi totam voluptatibus nobis, laboriosam fugit deserunt perferendis optio mollitia repudiandae autem. Officiis consectetur, vel.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa voluptates soluta libero id similique excepturi totam voluptatibus nobis, laboriosam fugit deserunt perferendis optio mollitia repudiandae autem. Officiis consectetur, vel.</p>
       </div>
       <div class="columns six">
@@ -116,7 +143,7 @@
           </tbody>
         </table>
       </div>
-      <div class="columns four">
+      <div id="teste" class="columns four">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, <a target="_blank" href="http://google.com">cum temporibus omnis sit</a> reprehenderit adipisci aliquid voluptatibus eveniet obcaecati voluptate dolorem, libero deleniti quidem, quasi aliquam, aspernatur illo eligendi? Officia.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ad tenetur tempora eius sapiente rerum, nulla pariatur necessitatibus tempore, incidunt eos ut, laborum fugit. Quibusdam modi adipisci libero maxime facere?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime error minima vel, pariatur nam non ullam voluptates sunt minus reprehenderit. Illum corrupti aspernatur nam ex expedita eveniet a doloribus suscipit?</p>
@@ -125,6 +152,8 @@
     <div class="row">
       <form action="">
           <div class="six columns">
+            <label for="exampleNomeInput">Nome</label>
+            <input class="u-full-width" type="text">
             <label for="exampleEmailInput">Seu email</label>
             <input class="u-full-width" placeholder="test@mailbox.com" type="email">
           </div>
