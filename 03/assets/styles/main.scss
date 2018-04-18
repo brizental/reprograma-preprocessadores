@@ -12,7 +12,8 @@ body {
   background-color: #364061;
 }
 
-ul {
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -126,10 +127,42 @@ ul {
   }
 }
 
-
 /* My Wallet Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#my-wallet {
+  padding: 30px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .info {
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 12px;
+
+      span {
+        opacity: .5;
+      }
+
+      img {
+        height: 12px;
+      }
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: #4fc1f9;
+  }
+}
 
 /* Coin List
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
