@@ -1,0 +1,191 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+body {
+  background-color: #3c4869;
+}
+
+body,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Common Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.inline-icon {
+  height: 18px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.floating-button {
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px 21px 55px -50px rgba(0, 0, 0,1);
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+
+  img {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Resume Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#resume {
+  box-shadow: 0px 21px 55px -50px rgba(0, 0, 0,1);
+  background-image: url('../images/background-gradient.png');
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 25px;
+  position: relative;
+  color: white;
+  
+  .header {
+    margin: 0 20px;
+    padding: 20px 0 10px;
+
+    ul {      
+      display: flex;
+      flex-direction: center;
+      justify-content: space-between;
+      list-style-type: none;
+      width: 100%;
+
+      li {
+        text-align: center;
+
+        h4 {
+          text-transform: uppercase;
+          letter-spacing: 8px;
+          font-size: 10px;
+        }
+
+        .icon {
+          margin-top: 8px;
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  .balance {
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      font-size: 16px;
+
+      span {
+        font-size: 22px;
+      }
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}
+
+/* My Wallet Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#my-wallet {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  
+  .info {
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      opacity: .5;
+      font-size: 12px;
+
+      img {
+        height: 12px;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: #60c9f8;
+    margin-top: 35px;
+  }
+}
+
+/* Coin List
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#coin-list {
+  li {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 20px 15px;
+    background: linear-gradient(to right, rgba(83,95,128,1) 0%,rgba(51,63,96,1) 100%);
+    box-shadow: 10px 10px 53px -4px rgba(0,0,0,0.24);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    padding: 20px;
+
+    .coin,
+    .price {
+      h4 {
+        margin: 0 0 7px 0;
+      }
+
+      p {
+        margin: 0;
+        opacity: .5;
+      }
+    }
+
+    .chart {
+      padding: 10px 0;
+
+      p {
+        font-weight: normal;
+
+        img {
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
