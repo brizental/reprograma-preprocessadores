@@ -166,3 +166,30 @@ p {
 
 /* Coin List
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#coin-list {
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin: 10px 20px;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(82,94,127,1) 0%,rgba(51,63,96,1) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 37px 6px rgba(0,0,0,0.34);
+
+    .coin,
+    .price {
+      h4 {
+        margin-bottom: 2px;
+        margin-top: 0;
+      }
+
+      p {
+        opacity: .5;
+      }
+    }
+  }
+}
