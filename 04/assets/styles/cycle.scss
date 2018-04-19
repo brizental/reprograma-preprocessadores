@@ -56,10 +56,73 @@
 /* Graph Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#graph {
+  margin: 40px 0 20px;
+
+  img {
+    width: 100vw;
+  }
+
+  h4 {
+    display: inline-block;
+    margin: 0 20px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+}
 
 /* Percentages Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#percentages {
+  padding: 0 20px;
+
+  .tabs {
+    ul {
+      @extend %flexbox;
+      list-style-type: none;
+
+      li {
+        padding-bottom: 5px;
+        letter-spacing: 2px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .numbers {
+    @extend %flexbox;
+
+    div {
+      width: 50%;
+      margin: 20px 0 0;
+      padding-bottom: 20px;
+
+
+      &:first-child {
+        border-right: 1px solid rgba(255, 255, 255, .1);
+      }
+
+      p {
+        opacity: $opacity;
+        letter-spacing: 2px;
+        font-size: 14px;
+        margin-left: 45px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        text-align: center;
+
+        span {
+          opacity: $opacity;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
 
 
 
