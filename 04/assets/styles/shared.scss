@@ -1,0 +1,83 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-color: #364061;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.inline-icon {
+  height: 18px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.floating-button {
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: -20px;
+  z-index: 4;
+
+  img {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.active {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(249,122,179,1);
+}
+
+#header {
+  margin: 0 20px;
+  padding: 0 0 10px;
+  position: absolute;
+  top: 20px;
+  width: calc(100vw - 40px);
+  z-index: 999;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+
+    li {
+      text-align: center;
+
+      h4 {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 10px;
+      }
+
+      .icon {
+        width: 20px;
+      }
+    }
+  }
+}

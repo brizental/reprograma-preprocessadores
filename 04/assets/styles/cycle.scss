@@ -1,0 +1,144 @@
+/* Overwrites
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#overview {
+  padding-bottom: 20px;
+
+  #header {
+    opacity: .3;
+  }
+}
+
+/* Card Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#card {
+  background-image: url('../images/background-gradient-pb.png');
+  background-size: cover;
+  border-radius: 10px;
+  margin: 80px 15px 15px;
+  padding: 5px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .wallet {
+    width: 70px;
+    margin: 30px 20px 20px;
+    opacity: .5;
+  }
+
+  .balance {
+    p {
+      opacity: .5;
+      font-size: 12px;
+
+      .inline-icon {
+        height: 12px;
+      }
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 10px 0;
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .floating-button {
+    right: calc(50% - 20px);
+    background: linear-gradient(to right, rgba(151,133,235,1) 0%,rgba(249,122,179,1) 100%);
+  }
+}
+
+/* Graph Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#graph {
+  margin: 40px 0 20px;
+
+  img {
+    width: 100vw;
+  }
+
+  h4 {
+    margin: 0 20px;
+    padding-bottom: 7px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Percentages Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#percentages {
+  padding: 0 20px;
+
+  .tabs {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+
+      li {
+        padding-bottom: 10px;
+        opacity: .5;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      width: 50%;
+      margin: 20px 0;
+
+      &:nth-child(odd) {
+        border-right: 1px solid rgba(255, 255, 255, .2);
+      }
+
+      &:nth-child(even) {
+        padding-left: 20px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+
+        span {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        opacity: .5;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

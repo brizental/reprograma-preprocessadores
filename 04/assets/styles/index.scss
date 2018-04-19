@@ -1,93 +1,37 @@
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-* {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: white;
-}
-
-body {
-  background-color: #3c4869;
-}
-
-body,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-
-}
-
-/* Common Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.inline-icon {
-  height: 18px;
-  display: inline-block;
-  margin-left: 5px;
-}
-
-.floating-button {
-  border: none;
-  border-radius: 100%;
-  background-color: white;
-  box-shadow: 0px 21px 55px -50px rgba(0, 0, 0,1);
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 20px;
-  bottom: -20px;
-
-  img {
-    margin-top: 3px;
-    width: 18px;
-    height: 18px;
-  }
-}
-
 /* Resume Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#resume-shadow-1,
+#resume-shadow-2 {
+  background-image: url('../images/background-gradient.png');
+  background-size: cover;
+  position: absolute;
+  height: 153.6px;
+  border-radius: 10px;
+}
+
+#resume-shadow-1 {
+  top: 20px;
+  width: 80vw;
+  left: 10vw;
+  opacity: .2;
+}
+
+#resume-shadow-2 {
+  top: 10px;
+  width: 90vw;
+  left: 5vw;
+  opacity: .5;
+}
+
 #resume {
-  box-shadow: 0px 21px 55px -50px rgba(0, 0, 0,1);
   background-image: url('../images/background-gradient.png');
   background-size: cover;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-top: 70px;
   padding-bottom: 25px;
   position: relative;
-  color: white;
-  
-  .header {
-    margin: 0 20px;
-    padding: 20px 0 10px;
-
-    ul {      
-      display: flex;
-      flex-direction: center;
-      justify-content: space-between;
-      list-style-type: none;
-      width: 100%;
-
-      li {
-        text-align: center;
-
-        h4 {
-          text-transform: uppercase;
-          letter-spacing: 8px;
-          font-size: 10px;
-        }
-
-        .icon {
-          margin-top: 8px;
-          width: 20px;
-        }
-      }
-    }
-  }
 
   .balance {
     text-align: center;
@@ -111,10 +55,11 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #my-wallet {
-  padding: 20px 30px;
+  padding: 30px 30px 20px;
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+
   .info {
     h1 {
       font-size: 24px;
@@ -122,8 +67,11 @@ p {
     }
 
     p {
-      opacity: .5;
       font-size: 12px;
+
+      span {
+        opacity: .5;
+      }
 
       img {
         height: 12px;
@@ -132,12 +80,11 @@ p {
   }
 
   a {
-    text-decoration: none;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 2px;
     font-size: 10px;
-    color: #60c9f8;
-    margin-top: 35px;
+    color: #4fc1f9;
   }
 }
 
@@ -157,6 +104,10 @@ p {
     font-size: 10px;
     padding: 20px;
 
+    div {
+      width: 33.3333%;
+    }
+
     .coin,
     .price {
       h4 {
@@ -171,6 +122,7 @@ p {
 
     .chart {
       padding: 10px 0;
+      text-align: center;
 
       p {
         font-weight: normal;
@@ -182,10 +134,3 @@ p {
     }
   }
 }
-
-
-
-
-
-
-
