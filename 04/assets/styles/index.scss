@@ -7,7 +7,7 @@
   background-size: cover;
   position: absolute;
   height: 153.6px;
-  border-radius: 10px;
+  border-radius: $border-radius;
 }
 
 #resume-shadow-1 {
@@ -21,7 +21,7 @@
   top: 10px;
   width: 90vw;
   left: 5vw;
-  opacity: .5;
+  opacity: $opacity;
 }
 
 #resume {
@@ -56,9 +56,7 @@
 
 #my-wallet {
   padding: 30px 30px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flexbox;
 
   .info {
     h1 {
@@ -70,7 +68,7 @@
       font-size: 12px;
 
       span {
-        opacity: .5;
+        opacity: $opacity;
       }
 
       img {
@@ -95,7 +93,7 @@
   li {
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: $border-radius;
     margin: 10px 20px 15px;
     background: linear-gradient(to right, rgba(83,95,128,1) 0%,rgba(51,63,96,1) 100%);
     box-shadow: 10px 10px 53px -4px rgba(0,0,0,0.24);
@@ -116,7 +114,7 @@
 
       p {
         margin: 0;
-        opacity: .5;
+        opacity: $opacity;
       }
     }
 
