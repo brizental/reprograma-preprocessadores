@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+body {
+    margin: 0;
+}
+
+// Estilos comuns
+
+%flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%input-estilo {
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid purple;
+}
+
+%flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+// Estilos do body
+
+header {
+    padding-bottom: 33px;
+
+    img {
+        width: 50vw;
+        display: flex;
+        margin: 0 auto;
+
+    }
+}
+
+#container {
+    width: 59vw;
+    margin: 0 auto;
+
+    .linha {
+        @extend %flexbox;
+        margin-bottom: 25px;
+
+        .coluna {
+            width: 50%;
+            @extend %flexcolumn;
+
+            h1,
+            h2 {
+                font-family: 'Black Han Sans';
+                margin: 0;
+                letter-spacing: 2px;
+            }
+
+            img {
+                width: 100%;
+                padding-left: 18px;
+            }
+
+            ul {
+                padding-left: 0;
+                list-style: none;
+                font-size: 13px;
+            }
+
+            form {
+                @extend %flexcolumn;
+
+                .grupo-input {
+                    @extend %flexcolumn;
+
+                    input,
+                    textarea {
+                        @extend %input-estilo;
+                    }
+
+                    label {
+                        font-size: 13px;
+                    }
+
+                    textarea {
+                        margin: 15px 0;
+                    }
+
+                    input:focus,
+                    textarea:focus {
+                        border: none;
+                        outline-color: #9c9c9c;
+                    }
+                }
+
+                #botao-enviar {
+                    width: 30%;
+                    margin: 0 auto;
+                    @extend %input-estilo;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #container {
+        width: 85vw;
+
+        .linha {
+            flex-direction: column;
+
+            .coluna {
+                width: 100%;
+
+                h1,
+                h2 {
+                    text-align: center;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 900px) {
+    #container {
+        width: 75vw;
+    }
+}
